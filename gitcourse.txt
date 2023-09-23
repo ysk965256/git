@@ -1,0 +1,77 @@
+"git "
+frist lanch server then after install git
+make a directory and go to that directory
+git init .=initialize the git,
+add some file into that directory,that files are in working area,here git has 3 life cycles (1 is working areaa,2 is staging or index area,3 is local repo),
+_to storing our code into git local repo use this comands,
+-basically our code by default will be in work area,      -git status---command,
+-git add "filename" pushing our code into staging area,   --git ls-files ---command to see staging area filles
+-git comit -m "comment t" pushing our code into local repo, --git log 0r git log --oneline or git log --oneline --graph or git log --reflog -- commands for detail info of local area,
+
+
+
+-git branching topic------
+git checkout master  ---switching into master branch,
+git checkout -b siva  --creating and switching int0 branch mode command
+git checkout branch
+git branch ---to see how many banches and pointer is pointing which branch command,
+
+
+--git reset---
+git mixed commit id -- thiscommand is used to delete staging area and local repo file 
+git soft commit id --this command delete local repo specific fille
+git hard cmmit id  --this command will delete all areas followed by commit id
+
+
+
+
+--git tag --
+git tag v.1.0 commit id  ---this comman gives the proper info and adding tags to that specfic commit
+git tag -a v.1.2.0 commit id --this command gives annonated tag to that specfic commit,
+
+---git merge concept--
+
+
+git merge --command this merge the modifications what andall done in branches that al modifications reflectes into master branch 
+git mergetool --this command shows graph of files
+git cherrt-pick commit id  --comand mainly used for it reducess merge conflict and merging certain commits only,
+
+branch to master is fastforward merge,
+
+
+
+
+---git push --
+
+
+frist create a new repo in remote repo,
+copy that repo link
+
+and give the command into the server means our local repo area
+
+
+git remote add origin "link"
+git push origin master or branch is our choice which one we want to push or we can followed by commit id we can push our code into remote repo
+give credintials : git id  
+git pass:our git passwrd is not working we need generate token and use that token as a passwrd or passwrd less authentication we can do,
+   cd ~/.ssh
+   ls -ltr
+   goto pub key and copy that key  paste into remote repo ssh key option and paste into it ,
+
+
+--git clone ,git pull git fetch--
+
+
+git clone url ---we clone the entire repo into our local repo by using command from remote repo,
+
+
+dev2 what all changes he had done into code  we can check by using  fetch command
+
+-git fetch origin,
+-git pull origin  --this command will helps to see all changes and alternativley merging opertion will also done using this command 
+
+
+------------------------------------------------------------------------------------------
+
+
+
